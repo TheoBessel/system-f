@@ -65,7 +65,7 @@ executable SystemF
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    other-modules:    Lang.AST Lang.Parser
+    other-modules:    Lang.AST Lang.Parser Parsing.Parser
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -74,7 +74,7 @@ executable SystemF
     build-depends:    base ^>=4.18.0.0
 
     -- Directories containing source files.
-    hs-source-dirs:   src
+    hs-source-dirs:   src lib
 
     -- Base language which the package is written in.
     default-language: GHC2021
